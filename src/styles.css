@@ -1,5 +1,12 @@
 body {
   font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+div.all-app {
+  flex: 1;
 }
 .navbar {
   padding: 22px 68px;
@@ -12,13 +19,14 @@ body {
   left: 0;
 }
 .f-block {
-  margin: 128px 131px 64px 131px;
+  margin: 128px 128px 64px 128px;
   display: flex;
   align-items: flex-start;
 }
 .img {
-  width: 96px;
+  width: 128px;
   margin-right: 16px;
+  border-radius: 8px;
 }
 
 .second-block {
@@ -26,13 +34,8 @@ body {
 }
 
 .footer {
+  width: 100%;
   padding: 22px 68px;
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  margin-bottom: 0px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,10 +45,6 @@ body {
 .box {
   display: flex;
   gap: 16px;
-}
-.about {
-  color: black;
-  font-size: 16px;
 }
 .description {
   font-size: 14px;
@@ -65,14 +64,26 @@ span {
 
   color: rgba(0, 0, 0, 0.676);
 }
-img {
-  max-width: 100%;
-  margin: 0 auto;
-}
 a {
   color: black;
 }
 a:hover {
   color: black;
   cursor: pointer;
+}
+@media (max-width: 576px) {
+  .f-block,
+  .second-block {
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+  .about-main {
+    font-size: 20px;
+  }
+  .main {
+    font-size: 14px;
+  }
+  .description {
+    font-size: 12px;
+  }
 }
