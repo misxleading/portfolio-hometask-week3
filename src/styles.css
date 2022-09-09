@@ -78,10 +78,20 @@ a:hover {
   color: rgba(0, 0, 0, 0.441);
 }
 @media (max-width: 576px) {
+  .f-block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
+  }
+  .img {
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
   .f-block,
   .second-block {
     margin-left: 48px;
     margin-right: 48px;
+    text-align: center;
   }
   .about-main {
     font-size: 20px;
