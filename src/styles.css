@@ -78,6 +78,9 @@ a:hover {
   color: rgba(0, 0, 0, 0.441);
 }
 @media (max-width: 576px) {
+  .navbar {
+    padding: 12px 18px;
+  }
   .f-block {
     display: flex;
     flex-direction: column;
